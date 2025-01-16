@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    .sidebar {
+      background: #202124;
+      color: white;
+      width: 20%;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar .logo {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li.active {
+      font-weight: bold;
+    }
+
+    .sidebar .profile {
+      margin-top: auto;
+    }
+
+    .sidebar .profile p {
+      margin: 5px 0;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    table .state-in-progress {
+      color: orange;
+    }
+
+    table .state-complete {
+      color: green;
+    }
+
+    table .state-cancelled {
+      color: red;
+    }
+
+    .icon-heart {
+      color: green;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">Skyline Riyadh</div>
+    <ul>
+      <li>Tickets</li>
+      <li>Optimal routes</li>
+      <li class="active">History</li>
+      <li>Security & privacy</li>
+      <li>About service</li>
+      <li>Help center</li>
+    </ul>
+    <div class="profile">
+      <p>Layann</p>
+      <p>Lm23@gmail.com</p>
+      <button>Log out</button>
+    </div>
+  </div>
+  <div class="main">
+    <header>
+      <h1>History</h1>
+      <input type="text" placeholder="Search">
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Trip (Start station - Final station)</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Favorite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MOI-Kng Fahad District2</td>
+          <td>2025/1/15</td>
+          <td class="state-in-progress">In progress</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+        <tr>
+          <td>AL Iman Hospital-Al Owd</td>
+          <td>2025/1/10</td>
+          <td class="state-in-progress">In progress</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+        <tr>
+          <td>As Salam-Qasr AL Hokm</td>
+          <td>2025/1/3</td>
+          <td class="state-complete">Complete</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+        <tr>
+          <td>AL Iman Hospital-Al Owd</td>
+          <td>2024/12/28</td>
+          <td class="state-complete">Complete</td>
+          <td><span class="icon-heart">-</span></td>
+        </tr>
+        <tr>
+          <td>Airport T5-ALHamra</td>
+          <td>2024/12/26</td>
+          <td class="state-complete">Complete</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+        <tr>
+          <td>Sultanah-Bank Albilad</td>
+          <td>2024/12/25</td>
+          <td class="state-cancelled">Cancelled</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+        <tr>
+          <td>KAFD-Sabic</td>
+          <td>2024/12/22</td>
+          <td class="state-cancelled">Cancelled</td>
+          <td><span class="icon-heart">❤</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

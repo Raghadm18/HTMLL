@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Skyline Riyadh Dashboard</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        } 
+ 
+        .sidebar { 
+            width: 250px; 
+            background-color: #333; 
+            color: #fff; 
+            height: 100vh; 
+            position: fixed; 
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+        } 
+ 
+        .sidebar h2 { 
+            text-align: center; 
+            margin-bottom: 30px; 
+        } 
+ 
+        .sidebar ul { 
+            list-style: none; 
+            padding: 0; 
+        } 
+ 
+        .sidebar ul li { 
+            margin: 15px 0; 
+        } 
+ 
+        .sidebar ul li a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 18px; 
+            display: flex; 
+            align-items: center; 
+        } 
+ 
+        .sidebar ul li a:hover { 
+            text-decoration: underline; 
+        } 
+ 
+        .sidebar ul li a img { 
+            width: 20px; 
+            height: 20px; 
+            margin-right: 10px; 
+        } 
+ 
+        .content { 
+            margin-left: 270px; 
+            padding: 20px; 
+        } 
+ 
+        .dashboard { 
+            text-align: center; 
+        } 
+ 
+        .dashboard img { 
+            max-width: 90%; 
+            height: 500px; 
+        } 
+ 
+        .dashboard-buttons { 
+            display: flex; 
+            justify-content: center; 
+            margin-top: 20px; 
+        } 
+ 
+        .dashboard-buttons button { 
+            margin: 0 10px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+        } 
+ 
+        .dashboard-buttons button:hover { 
+            background-color: #45a049; 
+        } 
+ 
+        .sidebar .bottom-links { 
+            margin-top: auto; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="sidebar"> 
+        <h2>Skyline Riyadh</h2> 
+        <ul> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005843.png">Tickets</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005658.png"Routes Icon">Optimal Routes</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005710.png"alt="History Icon">History</a></li> 
+        </ul> 
+        <ul class="bottom-links"> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005719.png"Privacy Icon">Security & Privacy</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 010515.png"About Icon">About Service</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005741.png"Help Icon">Help Center</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 010715.png"Settings Icon">Settings</a></li> 
+            <li><a href="#"><img src="images/لقطة الشاشة 2025-01-16 005809.png"Logout Icon">Logout</a></li> 
+        </ul> 
+    </div> 
+ 
+    <div class="content"> 
+        <div class="dashboard"> 
+            <img src="images/لقطة الشاشة 2025-01-16 003844.png"Metro Map> 
+            <div class="dashboard-buttons"> 
+                <button>Paths</button> 
+                <button>Flow Track</button> 
+                <button>Stations</button> 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+</html>
